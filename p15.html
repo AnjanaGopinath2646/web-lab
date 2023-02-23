@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+var i,j,n;
+l=parseInt(prompt("enter a lower limit"));
+u=parseInt(prompt("Enter Upper limit"));
+document.write("prime numbers from",l,"to",u,"are:","<br>");
+
+for(i=l;i<=u;i++)
+{
+flag=0
+ for(j=1;j<=i;j++)
+ {
+  if(i%j==0)
+  {
+   flag++;
+  }
+ }
+ if(flag==2)
+ {
+ document.write(i+"<br>");
+ }
+}
+</script>
+</head>
+</html>
+   
