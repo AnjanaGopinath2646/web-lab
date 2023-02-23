@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+ if(document.myForm.name.value=="")
+ {
+  alert("please provide your name");
+  document.myform.name.focus();
+  return false;
+  }
+ 
+ if(document.myForm.Email.value=="")
+ {
+  aler("please provide your email");
+  document.myform.email.focus();
+  return false;
+  }
+  
+  if(document.myform.Zip.value==""||is NaN(document.myform.Zip.value)||(document.myform.Zip.value.length!=5)
+  {
+  alert("please provide a zip in format #####");
+  document.myform.zip.focus();
+  return false;
+  }
+  
+  if(document.myform.Country.value=="")
+  {
+  alert("please provide yur country");
+  document.myform.Country.focus();
+  return false;
+  }
+  return(alert("submitted"));
+ }
+</script>
+</head>
+ <body>
+ <form name="myform">
+ <table align="center" cellpadding="5x">
+ 
+ <tr>
+ <td>name:</td>
+ <td><input type="text" name="name"></td>
+ </tr>
+ 
+ <td>Email:</td>
+ <td><input type="text" name="e"></td>
+ </tr>
+ 
+  <td>Zip:</td>
+ <td><input type="text" name="zip"></td>
+ </tr>
+ 
+ <tr>
+ <td>Country</td>
+ <td><select name="country">
+     <option>India</option>
+	 <option>China</option>
+	 <option>Russia</option></select></td>
+</tr>
+
+<tr>
+<td><input type="button" value="submit" onclick="validate()"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
